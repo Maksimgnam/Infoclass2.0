@@ -67,7 +67,7 @@ const News = ({ isTheme }) => {
                     </button>
                     <div className='w-11/12 h-full flex items-center justify-center'>
                         <div className='w-auto h-full flex items-center justify-around  '>
-                            <h2 className='text-2xl font-medium '>Уроки</h2>
+                            <h2 className='text-2xl font-medium  title'>Уроки</h2>
                             <div className='w-96 h-full rounded-2xl flex items-center justify-end'>
                                 <input
                                     value={searchName}
@@ -96,8 +96,8 @@ const News = ({ isTheme }) => {
                         {filteredLessons.length > 0 ? (
                             <div className='w-full  h-auto flex flex-wrap justify-center   pl-5 '>
                                 {filteredLessons.map((item, index) => (
-                                    <div key={index} className='w-auto min-w-news-card max-w-news-card min-h-lessons-card h-auto rounded-xl flex flex-col items-center m-3 pt-2'>
-                                        <div className='w-11/12 h-4/6 bg-slate-100 rounded-xl'>
+                                    <div key={index} className='w-auto min-w-news-card h-1/6 rounded-xl flex flex-col items-center m-3 pt-2'>
+                                        <div className='w-11/12 h-3/6 bg-slate-100 rounded-xl'>
                                             <img className='w-full h-full rounded-xl' src="https://thumbor.bigedition.com/canion-do-funil/1-XwGPkqu2z8sxyeILZgafef_jA=/480x360/filters:format(webp):quality(80)/granite-web-prod/98/71/987127fad40c48a0b66596b01565632f.jpeg" alt="" />
                                         </div>
                                         <div className='w-11/12 h-3/6 pl-2'>

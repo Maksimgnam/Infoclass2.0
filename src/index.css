@@ -141,6 +141,16 @@ body {
     display: none;
   }
 
+  .title {
+    display: none;
+  }
+
+  .page-header {
+    background-color: green;
+  }
+
+
+
 }
 
 
@@ -190,6 +200,12 @@ body {
 
   .max-footer-card span {
     font-size: 17px;
+  }
+
+  .page-header {
+    width: 50%;
+    display: flex;
+    background-color: red;
   }
 
 }

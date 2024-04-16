@@ -57,16 +57,16 @@ const News = ({ isTheme }) => {
             color: isTheme ? 'white' : '#333',
             padding: '5px',
         }}>
-            <div className='w-full h-14 flex justify-between items-center '>
-                <button className='w-10 h-10 bg-black rounded-md '>
+            <div className='w-full h-14 flex justify-between items-center page-header '>
+                <button className='w-14 h-10 bg-black rounded-md '>
                     <Link to="/">
                         <p className='text-2xl text-white font-mono'>{`<`}</p>
                     </Link>
 
                 </button>
-                <div className='w-11/12 h-full flex items-center justify-center'>
+                <div className='w-11/12 h-full flex items-center justify-center '>
                     <div className='w-auto h-full flex items-center justify-around  '>
-                        <h2 className='text-2xl font-medium '>Новини</h2>
+                        <h2 className='text-2xl font-medium title '>Новини</h2>
                         <div className='w-96 h-full rounded-2xl flex items-center justify-end'>
                             <input
                                 value={searchName}
