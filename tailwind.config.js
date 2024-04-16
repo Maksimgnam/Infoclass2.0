@@ -1,0 +1,47 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      height: {
+        "header": '10vh',
+        "pages": '90vh',
+        "news": '70vh',
+        "loader": '95vh',
+        '1px': '3px',
+        'navigation': '100vh'
+
+      },
+      minWidth: {
+        "news-card": '40%',
+        'home-text': '40%'
+      },
+      minHeight: {
+        'home-card': '95%',
+        'home-text': '105%',
+        "footer": '25vh',
+        "lessons-card": "40%"
+
+
+
+      },
+      maxWidth: {
+        'home-text': '45%',
+        'home-images': '50%',
+        'home-card': '80%',
+        'news-card': "40%"
+
+      },
+      backgroundColor: {
+        "navigation": "#333"
+      }
+
+
+
+    },
+  },
+  plugins: [],
+}
+
