@@ -5,15 +5,19 @@ import { useState } from 'react';
 import teacher from '../../../public/Images/teacher.jpg';
 import teacher2 from '../../../public/Images/teacher2.jpg';
 
-const Teachers = () => {
-    const [isHover, setIsHover] = useState(false)
+const Teachers = ({ isTheme }) => {
+
     return (
-        <div className='w-full h-auto flex flex-col  items-center p-5 '>
+        <div style={{
+            backgroundColor: isTheme ? '#333' : '#fff',
+            color: isTheme ? 'white' : '#333',
+
+        }} className='w-full h-auto flex flex-col  items-center p-5 '>
             <h3 className='text-2xl font-mono'>Вчителі</h3>
             <div className='w-full h-auto   rounded-md flex items-center justify-center  '>
                 <div className='w-auto  h-full   rounded-xl pl-2 flex flex-wrap  items-center justify-center '>
 
-                    <div onMouseMove={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} className='w-80 h-full m-8 mt-0 flex flex-col  justify-center items-center rounded-md  pt-4 pb-5 p-3   '>
+                    <div className='w-80 h-full m-8 mt-0 flex flex-col  justify-center items-center rounded-md  pt-4 pb-5 p-3   '>
 
                         <img className='w-80 h-96 rounded-md size-cover  border-emerald-900 ' src={teacher} alt="" />
 
@@ -44,7 +48,7 @@ const Teachers = () => {
 
 
                     </div>
-                    <div onMouseMove={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} className='w-80 h-full m-8 mt-0 flex flex-col  justify-center items-center rounded-md  pt-4 pb-5 p-3   '>
+                    <div className='w-80 h-full m-8 mt-0 flex flex-col  justify-center items-center rounded-md  pt-4 pb-5 p-3   '>
 
                         <img className='w-full h-96 rounded-md size-cover  border-emerald-900 ' src={teacher2} alt="" />
 

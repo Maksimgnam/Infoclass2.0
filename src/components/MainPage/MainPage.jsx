@@ -61,6 +61,7 @@ import Rules from '../Rules/Rules';
 import Footer from '../Footer/Footer';
 import Teachers from '../Teachers/Teachers';
 import NavigationPage from '../NavigationPage/NavigationPage';
+import Documents from '../Documents/Documents';
 
 
 const Main = () => {
@@ -90,7 +91,8 @@ const Main = () => {
 
                                 <Motos isTheme={isTheme} />
                                 <Rules isTheme={isTheme} />
-                                <Teachers />
+                                <Teachers isTheme={isTheme} />
+                                <Documents isTheme={isTheme} />
                                 <Footer />
 
 

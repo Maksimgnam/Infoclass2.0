@@ -59,12 +59,14 @@ const News = ({ isTheme }) => {
         }}>
             <div className='w-full h-14 flex justify-center origin-center '>
                 <div className='w-full h-14 flex justify-between items-center '>
-                    <button className='w-10 h-10 bg-black rounded-md '>
-                        <Link to="/">
-                            <p className='text-2xl text-white font-mono'>{`<`}</p>
-                        </Link>
+                    <Link to="/">
+                        <button className='w-10 h-10 bg-black rounded-md text-2xl text-white font-mono '>
 
-                    </button>
+                            {`<`}
+
+
+                        </button>
+                    </Link>
                     <div className='w-11/12 h-full flex items-center justify-center'>
                         <div className='w-auto h-full flex items-center justify-around  '>
                             <h2 className='text-2xl font-medium  title'>Уроки</h2>

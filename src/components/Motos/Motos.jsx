@@ -8,7 +8,7 @@ const Motos = ({ isTheme }) => {
 
         }} className='w-full h-auto  flex flex-col items-center justify-center p-5'>
             <h1 className='text-2xl font-mono'>Наші мото</h1>
-            <div className='w-5/6 h-auto flex flex-wrap items-center justify-center'>
+            <div className='w-full h-auto flex flex-wrap items-center justify-center'>
                 <div className='w-80 h-64 rounded-xl border-green-200 border-2 m-3 p-3 card '>
                     <div className='w-full h-auto flex items-center justify-between  '>
                         <p className='text-2xl font-mono'>Клавіатура,Код</p>
