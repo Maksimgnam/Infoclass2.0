@@ -8,7 +8,7 @@ import class4 from '../../../public/Images/class4.jpg'
 
 const Home = ({ isTheme }) => {
     return (
-        <div className='w-full h-auto   flex items-center justify-center '>
+        <div style={{ backgroundColor: isTheme ? '#333' : '#fff', color: isTheme ? 'white' : '#333', }} className='w-full h-auto   flex items-center justify-center '>
             {/* <div className='w-10/12 bg-red-800 h-auto  rounded-xl flex flex-wrap items-center   '>
                 <div className='w-auto min-w-home-text h-auto '>
                     <div className=' w-auto min-w-home-text h-auto flex flex-col justify-around  pt-6  pl-6 '>
@@ -67,7 +67,7 @@ const Home = ({ isTheme }) => {
 
 
             </div> */}
-            <div style={{ backgroundColor: isTheme ? '#333' : '#fff', color: isTheme ? 'white' : '#333', }} className=' max-w-home-card h-auto  flex flex-wrap justify-around '>
+            <div className=' max-w-home-card h-auto  flex flex-wrap justify-around '>
                 <div className='w-auto min-w-home-text max-w-home-text  min-h-home-text '>
                     <div className='w-auto flex pt-6'>
                         <div className='w-10 h-10  rounded-md '>
