@@ -22,7 +22,8 @@ module.exports = {
         'home-card': '95%',
         'home-text': '105%',
         "footer": '25vh',
-        "lessons-card": "40%"
+        "lessons-card": "40%",
+        "gallery": "92vh"
 
 
 

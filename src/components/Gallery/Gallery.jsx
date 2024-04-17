@@ -83,7 +83,7 @@ const Gallery = () => {
         []
     );
     return (
-        <div className='w-full h-auto flex  flex-col justify-center items-center   p-3'>
+        <div className='w-full h-full  flex  flex-col justify-center items-center   p-3'>
 
             <div className='w-full h-auto flex  items-center '>
                 <button className='w-10 h-10 bg-black rounded-md '>
@@ -101,7 +101,7 @@ const Gallery = () => {
             </div>
             {
                 galleryData.length > 0 ? (
-                    <div className='w-11/12 h-auto flex flex-wrap items-center justify-center  pt-5 '>
+                    <div className='w-11/12 h-auto min-h-gallery flex flex-wrap items-center justify-center  pt-5 '>
                         {
                             galleryData.map((item, index) => (
                                 <div key={index} style={initialCardDimensions[index]} className='w-full h-full rounded-xl  flex items-center justify-center   m-5 mt-0 ml-0'>
