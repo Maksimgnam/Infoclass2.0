@@ -9,65 +9,8 @@ import class4 from '../../../public/Images/class4.jpg'
 const Home = ({ isTheme }) => {
     return (
         <div style={{ backgroundColor: isTheme ? '#333' : '#fff', color: isTheme ? 'white' : '#333', }} className='w-full h-auto   flex items-center justify-center '>
-            {/* <div className='w-10/12 bg-red-800 h-auto  rounded-xl flex flex-wrap items-center   '>
-                <div className='w-auto min-w-home-text h-auto '>
-                    <div className=' w-auto min-w-home-text h-auto flex flex-col justify-around  pt-6  pl-6 '>
-                        <div className='w-auto flex'>
-                            <div className='w-10 h-10  rounded-md '>
-                                <img src="https://cdn-icons-png.flaticon.com/512/5390/5390264.png" alt="" />
-                            </div>
-                            <h1 className='text-3xl font-medium relative left-3'>Клас інформатики №2 </h1>
-                        </div>
-                        <div className='w-auto h-auto '>
-                            <p className='text-lg font-semibold text-gray-400'>Опис</p>
-                            <p className='text-md font-medium text-gray-500'>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis excepturi hic vero quod necessitatibus reiciendis architecto harum voluptates cumque eum eligendi quo explicabo voluptate, at dolores repellendus fugiat dolorem id.
-                                ipsum dolor, sit amet consectetur adipisicing elit.  ipsum dolor, sit amet consectetur adipisicing eli Perspiciatis                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis excepturi hic vero quod necessitatibus reiciendis architecto harum voluptates cumque eum eligendi quo explicabo voluptate, at dolores repellendus fugiat dolorem id.
-                                ipsum dolor, sit amet consectetur adipisicing elit.  ipsum dolor, sit amet conse excepturi hic vero quod necessitatibus reiciendis architecto harum voluptates cumque eum eligendi quo explicabo voluptate, at dolores repellen
-                            </p>
-
-                        </div>
-                        <div style={{
-                            backgroundColor: isTheme ? 'rgb(45, 42, 42)' : 'rgb(244, 243, 243)',
-
-                        }} className='w-4/6 h-1  rounded-lg '></div>
-                        <button className='w-48 h-16 bg-button  rounded-xl '>
-                            <p className='text-2xl text-white font-semibold'>
-                                <Link to="/news">Більше</Link> </p>
-
-                        </button>
-
-                    </div>
-
-
-
-
-
-                </div>
-                <div style={{
-                    backgroundColor: isTheme ? 'rgb(45, 42, 42)' : 'rgb(244, 243, 243)',
-
-                }} />
-                <div className='w-auto min-w-home-text  bg-red-50 h-auto text-black  rounded-xl flex flex-wrap   '>
-                    <div className='w-60 h-72 bg-slate-100 rounded-xl m-3'>
-                        <img className='w-full h-full  rounded-xl' src="https://www.innovadesigngroup.co.uk/wp-content/uploads/2017/05/Southlands-High-School-ICT.jpg" alt="" />
-                    </div>
-                    <div className='w-60 h-60 bg-slate-100 rounded-xl m-3'>
-                        <img className='w-full h-full  rounded-xl' src="https://www.taskspace.co.uk/wp-content/uploads/2017/07/ITandICTrooms.jpg" alt="" />
-                    </div>
-                    <div className='w-60 h-52 bg-slate-100 rounded-xl m-3'>
-                        <img className='w-full h-full  rounded-xl' src="https://cdn.nar.realtor/sites/default/files/assets/images/B2b_office_red.jpg" alt="" />
-                    </div>
-                    <div className='w-60 h-72 bg-slate-100 rounded-xl m-3 relative bottom-10'>
-                        <img className='w-full h-full  rounded-xl' src="https://officebanao.com/wp-content/uploads/2023/12/Office-Color-Design.jpg" alt="" />
-                    </div>
-
-
-                </div>
-
-
-            </div> */}
-            <div className=' max-w-home-card h-auto  flex flex-wrap justify-around '>
+      
+            <div className='w-11/12 max-w-home-card h-auto  flex flex-wrap justify-between '>
                 <div className='w-auto min-w-home-text max-w-home-text  min-h-home-text '>
                     <div className='w-auto flex pt-6'>
                         <div className='w-10 h-10  rounded-md '>
@@ -78,9 +21,11 @@ const Home = ({ isTheme }) => {
                     <div className='w-auto h-auto min-h-home-text pt-2 '>
                         <p className='text-lg font-semibold text-gray-400'>Опис</p>
                         <p className='text-md font-medium text-gray-500'>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis excepturi hic vero quod necessitatibus reiciendis architecto harum voluptates cumque eum eligendi quo explicabo voluptate, at dolores repellendus fugiat dolorem id.
-                            ipsum dolor, sit amet consectetur adipisicing elit.  ipsum dolor, sit amet consectetur adipisicing eli Perspiciatis                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis excepturi hic vero quod necessitatibus reiciendis architecto harum voluptates cumque eum eligendi quo explicabo voluptate, at dolores repellendus fugiat dolorem id.
-                            ipsum dolor, sit amet consectetur adipisicing elit.  ipsum dolor, sit amet conse excepturi hic vero quod necessitatibus reiciendis architecto harum voluptates cumque eum eligendi quo explicabo voluptate, at dolores repellen
+                        Клас інформатики - це місце, де учні отримують можливість поглиблено вивчати комп'ютерні науки та розвивати свої навички у цій сфері. У нашому класі створено сприятливу атмосферу для активного вивчення та експериментування. Заняття проходять як у формі лекцій, так і в практичній роботі за комп'ютерами. Учні знайомляться з основами програмування, роботи з операційними системами, мережами, веб-розробкою та іншими аспектами інформатики.
+
+Наш клас обладнаний сучасною комп'ютерною технікою та програмним забезпеченням, що дозволяє кожному учневі максимально ефективно вивчати матеріал. Крім того, ми надаємо можливість учням брати участь у різноманітних проектах та змаганнях з інформатики, щоб розвивати їх творчий потенціал та сприяти формуванню навичок командної роботи.
+
+Наша мета - не лише передавати знання, але й навчити учнів критично мислити, аналізувати і розв'язувати реальні проблеми за допомогою інформатики. Ми прагнемо підготувати наших учнів до успішної кар'єри в сфері технологій та зробити їх активними учасниками цифрового світу
                         </p>
                         <button className='w-48 h-16 bg-button  rounded-md mt-4 '>
 

@@ -86,7 +86,7 @@ const Gallery = () => {
         <div className='w-full h-full  flex  flex-col justify-center items-center   p-3'>
 
             <div className='w-full h-auto flex  items-center '>
-                <button className='w-10 h-10 bg-black rounded-md '>
+                <button className='w-9 h-9 bg-black rounded-md '>
                     <Link to="/">
                         <p className='text-2xl text-white font-mono'>{`<`}</p>
                     </Link>

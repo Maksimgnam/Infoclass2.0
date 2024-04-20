@@ -1,76 +1,52 @@
-import React from 'react'
-import Logo from '../Logo/Logo';
+
+
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='w-full min-h-footer text-black bg-button flex flex-wrap items-center justify-around '>
-            <div className='text-2xl font-mono pl-3'>infoClass</div>
-            <div className='w-auto h-auto  flex flex-col   max-footer-card   '>
-                <h3 className='text-xl font-mono'>Навігація</h3>
-                <p className='text-md font-mono'>
+        <div className=' w-full h-auto min-h-80 bg-black flex flex-wrap items-center justify-between text-center footer  p-3 pr-7'>
+
+
+            <div className='w-auto min-w-72 max-w-80 h-60  m-1'>
+            <h2 className=' text-xl text-center   text-white font-medium'>Навігація</h2>
+            <p className=' text-lg font-mono text-white p-1 hover:text-green '>
                     <Link to="/">Головна</Link>
                 </p>
-                <p className='text-md font-mono'>
+                <p className=' text-lg font-mono text-white p-1 hover:text-green'>
                     <Link to="/gallery">Галерея</Link>
                 </p>
-                <p className='text-md font-mono'>
+                <p className=' text-lg font-mono text-white p-1 hover:text-green'>
                     <Link to="/news">Новини</Link>
                 </p>
 
-                <p className='text-md font-mono'>
+                <p className=' text-lg font-mono text-white p-1 hover:text-green'>
                     <Link to="/lessons">Уроки</Link>
                 </p>
-
             </div>
-            <div className='w-auto h-auto  max-footer-card  '>
-                <h3 className='text-xl font-mono'>Контакти</h3>
-                <p className='text-lg font-mono'>
-                    <span className=' text-sm font-bold'>Сайт:</span>    <a href="http://shkloschool.kl.com.ua/">shkola-shklo.com</a>
+            <div className='w-auto min-w-72 max-w-80 h-60  m-1'>
+                <h2 className=' text-xl text-center   text-white font-medium'>Адреса</h2>
+                <p className=' text-lg font-mono text-white p-1 hover:text-green'>81050 смт. Шкло вулиця Т.Шеченка 1
+                    Яворіського району Львівської області</p>
+                <a href="https://www.google.com/maps/dir/49.9613696,23.5470848/%D1%88%D0%BA%D0%BB%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D1%88%D0%BA%D0%BE%D0%BB%D0%B0/@49.9588536,23.5429642,16.7z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x473b3dbb45fa7973:0xe4ca5c0e575e91b7!2m2!1d23.5453349!2d49.9569949?entry=ttu">
 
-                </p>
-                <p className='text-lg font-mono'>
-                    <span className=' text-sm font-bold'>Gmail:</span>   shkolashklo1@gmail.com
-                </p>
-                <p className='text-lg font-mono'>
-                    <span className='text-sm  font-bold'>Контакти:</span>  +380(98) 775 6565
-                </p>
-
-
-
-            </div>
-            <div className='w-auto h-auto  max-footer-card '>
-                <h3 className='text-lg font-mono'>Соц.мережі</h3>
-                <div className='w-32 h-11  flex items-center justify-between'>
-                    <a href="https://www.youtube.com/@user-io5gq1kv4d">
-                        <img className='w-6 h-6' src="https://static.thenounproject.com/png/40254-200.png" alt="" />
-                    </a>
-                    <a href="https://www.youtube.com/@user-io5gq1kv4d">
-                        <img className='w-9 h-9' src="https://www.iconpacks.net/icons/1/free-youtube-icon-123-thumb.png" alt="" />
-                    </a>
-
-                    <a href="https://www.instagram.com/school_shklo/">
-
-                        <img className='w-7 h-7' src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png" alt="" />
-                    </a>
-
-
-
-                </div>
-
-            </div>
-
-            <div className='w-auto h-auto  max-footer-card  '>
-                <h3 className='text-xl font-mono'>Адреса</h3>
-                <p className='text-lg font-mono'>Шкло</p>
-                <p className='text-md font-mono'>Львівська область</p>
-                <p className='text-md font-mono'>вул: Тараса Шевченка 1</p>
-                <a href="https://www.google.com/maps/place/%D0%A1%D0%97%D0%9E%D0%A8+%D1%81%D0%BC%D1%82.%D0%A8%D0%BA%D0%BB%D0%BE/@49.9570383,23.5427557,17z/data=!3m1!4b1!4m6!3m5!1s0x473b3dbb45fa7973:0xe4ca5c0e575e91b7!8m2!3d49.9570349!4d23.5453306!16s%2Fg%2F11bbydnm5s?hl=uk-UK&entry=ttu">
-                    <div className='flex items-center relative top-1 ' ><img className='w-5 h-5' src="https://i.pinimg.com/originals/8b/72/61/8b7261afc1179fd7b1212062f7deb4ea.jpg" alt="" /> <p className='text-lg font-mono relative left-2'>На мапі</p></div>
+                    <button className='w-44 h-12 bg-black rounded-md border border-b-white mt-3'>
+                        <p className='text-center text-xl text-white font-mono'>Маршут</p>
+                    </button>
                 </a>
-
             </div>
-        </div >
+            <div className='w-auto min-w-72 max-w-96 h-60  m-1 flex flex-col p-2'>
+                <h2 className='text-xl text-center   text-white font-medium'>Контакти</h2>
+                <a href="https://www.facebook.com/ShkolaShklo" className='text-lg font-mono text-white p-1 hover:text-green'>facebook</a>
+                <a href="https://www.instagram.com/school_shklo" className='text-lg font-mono text-white p-1 hover:text-green'>instagram</a>
+                <p className='text-lg font-mono text-white p-1 hover:text-green'>тел: 032-595-0548</p>
+                <p className='text-lg font-mono text-white p-1 hover:text-green'>Email: shkolashklo@gmail.com</p>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.8968018276873!2d23.5427556758687!3d49.95703832276865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b3dbb45fa7973%3A0xe4ca5c0e575e91b7!2z0KHQl9Ce0Kgg0YHQvNGCLtCo0LrQu9C-!5e0!3m2!1suk!2sua!4v1712165119547!5m2!1suk!2sua" width="320" height="290"></iframe>
+
+
+        </div>
     )
 }
 

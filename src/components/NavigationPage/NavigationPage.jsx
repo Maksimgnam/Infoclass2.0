@@ -14,15 +14,12 @@ const NavigationPage = () => {
                 </Link>
             </div>
             <div className='w-full h-pages flex justify-center pt-14'>
-                <div className='w-40 h-96 flex flex-col justify-around'>
+                <div className='w-40 h-80 flex flex-col justify-around'>
                     <Link to="/">
                         <p className='text-4xl text-white font-mono'>Головна</p>
                     </Link>
                     <Link to="/news">
                         <p className='text-4xl text-white font-mono'>Новини</p>
-                    </Link>
-                    <Link to="/lessons">
-                        <p className='text-4xl text-white font-mono'>Уроки</p>
                     </Link>
                     <Link to="/gallery">
                         <p className='text-4xl text-white font-mono'>Галерея</p>

@@ -1,14 +1,18 @@
 [
     {
-        "image": "../Images/class1.jpg"
+        "image": "/Images/class1.jpg"
     },
     {
-        "image": "../Images/class2.jpg"
+        "image": "/Images/class2.jpg"
     },
     {
-        "image": "../Images/class3.jpg"
+        "image": "/Images/class3.jpg"
     },
     {
-        "image": "../Images/class4.jpg"
+        "image": "/Images/class4.jpg"
+    },
+    {
+        "image":"/galleryImages/two.jpg"
     }
+  
 ]

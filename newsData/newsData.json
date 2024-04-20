@@ -1,57 +1,27 @@
 [
     {
-        "title": "",
-        "description": "",
-        "image": ""
+        "title": "Наша історія",
+        "description": "Наш вчитель з одним з найкращих обчислвальних комп'ютерів 1990-их років",
+        "image": "/galleryImages/two.jpg",
+        "createdDate":"20.02.2024"
     },
     {
-        "title": "",
-        "description": "",
-        "image": ""
+        "title": "Наша гордість",
+        "description": "На цьому стенді зображено одних з найкращих  й талановитих наших учнів, які зараз застосовують свої знання у реальному житті",
+        "image": "/Images/class4.jpg",
+        "createdDate":"20.02.2024"
     },
     {
-        "title": "",
-        "description": "",
-        "image": ""
+        "title": "Урок інформатики 90-их",
+        "description": "Колись ми проводили уроки задопомогою великих та громістких комп'ютерів, але нам і тоді було весело та  пізнавально.",
+        "image": "",
+        "createdDate":"20.02.2024"
     },
     {
-        "title": "",
-        "description": "",
-        "image": ""
-    },
-    {
-        "title": "",
-        "description": "",
-        "image": ""
-    },
-    {
-        "title": "",
-        "description": "",
-        "image": ""
-    },
-    {
-        "title": "",
-        "description": "",
-        "image": ""
-    },
-    {
-        "title": "",
-        "description": "",
-        "image": ""
-    },
-    {
-        "title": "",
-        "description": "",
-        "image": ""
-    },
-    {
-        "title": "",
-        "description": "",
-        "image": ""
-    },
-    {
-        "title": "",
-        "description": "",
-        "image": ""
+        "title": "Пізнання технологій ",
+        "description": "Ми завжди пізнавали щось нове та цікаве, хоч зараз все  виглядає  застарілим, але це була наша історія, яку ми пройшли з цікавістю та бажанням.  ",
+        "image": "",
+        "createdDate":"20.02.2024"
     }
+  
 ]

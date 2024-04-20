@@ -1,55 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { isToday, isThisWeek, isThisMonth, isYesterday } from 'date-fns';
+import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import news from '../../../newsData/newsData.json'
+
 const News = ({ isTheme }) => {
-    const [news, setNews] = useState([]);
+
+    console.log(news)
+    // const [news, setNews] = useState([]);
     const [searchName, setSearchName] = useState('');
-    const [sordDate, setSortDate] = useState('')
+    
 
-    useEffect(() => {
-        const fetchNews = async () => {
-            try {
-                const response = await fetch('https://next-admin-server-1.onrender.com/api/get-news');
-                const data = await response.json();
-                setNews(data);
-            } catch (error) {
-                console.error('Error fetching news:', error);
-            }
-        };
-
-        fetchNews();
-    }, []);
-
-    const filteredNews = news.filter((item) => {
-        const newsDate = new Date(item.createdDate);
-
-
-        let dateFilter;
-        switch (sordDate) {
-            case 'today':
-                dateFilter = isToday(newsDate);
-                break;
-            case 'yesterday':
-                dateFilter = isYesterday(newsDate);
-                break;
-            case 'week':
-                dateFilter = isThisWeek(newsDate);
-                break;
-            case 'month':
-                dateFilter = isThisMonth(newsDate);
-                break;
-            default:
-                dateFilter = true;
-        }
-
-
-        const searchFilter = searchName
-            ? item.name.toLowerCase().includes(searchName.toLowerCase())
-            : true;
-
-        return dateFilter && searchFilter;
-    });
+    const filteredNews = news.filter(item =>
+        item.title.toLowerCase().includes(searchName.toLowerCase())
+    
+    )
 
     return (
         <div className='w-full h-full  ' style={{
@@ -59,7 +24,7 @@ const News = ({ isTheme }) => {
         }}>
             <div className='w-full h-14 flex justify-between items-center  '>
                 <Link to="/">
-                    <button className='w-10 h-10 bg-black rounded-md text-2xl text-white font-mono '>
+                    <button className='w-9 h-9 bg-black rounded-md text-2xl text-white font-mono'>
 
                         {`<`}
 
@@ -77,7 +42,7 @@ const News = ({ isTheme }) => {
                                 placeholder='Пошук новин...'
                                 className='w-5/6 h-12 text-lg  bg-transparent rounded-3xl  placeholder:text-lg outline-none pl-5'
                             />
-                            <div className='w-12 h-12 bg-button rounded-md flex items-center justify-center relative right-8'>
+                            <div className='w-11 h-11 bg-button rounded-md flex items-center justify-center relative right-8'>
                                 <img className='w-5 h-5' src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt="" />
                             </div>
                         </div>
@@ -95,17 +60,19 @@ const News = ({ isTheme }) => {
                         {filteredNews.length > 0 ? (
                             <div className='w-full  h-auto flex flex-wrap justify-center   pl-5 '>
                                 {filteredNews.map((item, index) => (
-                                    <div key={index} className='w-auto min-w-news-card h-1/6 rounded-xl flex flex-col items-center m-3 pt-2'>
-                                        <div className='w-11/12 h-3/6 bg-slate-100 rounded-xl'>
-                                            <img className='w-full h-full rounded-xl' src="https://thumbor.bigedition.com/canion-do-funil/1-XwGPkqu2z8sxyeILZgafef_jA=/480x360/filters:format(webp):quality(80)/granite-web-prod/98/71/987127fad40c48a0b66596b01565632f.jpeg" alt="" />
-                                        </div>
-                                        <div className='w-11/12 h-3/6 pl-2'>
-                                            <div className=' w-full h-14 flex items-center justify-between'>
-                                                <h2 className='text-3xl font-medium'>{item.name}</h2>
-                                                <h2 className='text-lg text-gray-600 font-medium '>{item.createdDate}</h2>
+                                    <div key={index} className='w-auto min-w-news-card max-w-news-card min-h-96 h-auto  rounded-xl flex flex-col justify-center items-center m-3 pt-2'>
+                                  
+                                            <img className='w-11/12 h-96 rounded' src={item.image} alt="" />
+                                     
+                                        <div className='w-11/12 h-auto  pt-3'>
+                                            <div className=' w-full h-auto flex items-center justify-between'>
+                                                <h2 className='sm:text-3xl text-3xl  font-medium'>{item.title}</h2>
                                             </div>
-                                            <div className='w-full h-auto'>
-                                                <p className='text-lg text-gray-400 font-medium'>{item.description}</p>
+                                            <div className='w-full h-auto pt-2'>
+                                                <p className='text-lg  font-medium'>{item.description}</p>
+                                            </div>
+                                            <div className='w-full h-auto pt-1 flex justify-end pr-2'>
+                                                <p className='text-lg  font-medium'>{item.createdDate}</p>
                                             </div>
                                         </div>
                                     </div>

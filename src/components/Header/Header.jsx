@@ -39,28 +39,29 @@ import Logo from '../Logo/Logo';
 
 const Header = ({ isTheme, themeChange }) => {
     return (
-        <div className='w-full h-header bg-white z-50 flex items-center justify-around ' style={{
+        <div className='w-full h-header bg-white z-50 flex items-center justify-between p-20 pt-0 pb-0 '
+         style={{
             backgroundColor: isTheme ? '#333' : '#fff',
             color: isTheme ? 'white' : '#333',
-            padding: '20px',
+
             boxShadow: isTheme ? '' : '0 0 4px #ccc'
         }}>
             <Logo />
             <div className='w-3/12 h-10 flex items-center justify-between'>
-                <a className=' text-lg  font-mono  hover:text-emerald-500 link-text'>
+                <a className=' text-xl  font-mono  hover:text-emerald-500 link-text'>
                     <Link to="/">Головна</Link>
                 </a>
-                <a className=' text-lg font-mono  hover:text-emerald-500 link-text'>
+                <a className=' text-xl font-mono  hover:text-emerald-500 link-text'>
                     <Link to="/news">Новини</Link>
                 </a>
-                <a className=' text-lg  font-mono hover:text-emerald-500 link-text'>
-                    <Link to="/lessons">Уроки</Link>         </a>
-                <a className=' text-lg  font-mono  hover:text-emerald-500 link-text'>
+              
+                <a className=' text-xl  font-mono  hover:text-emerald-500 link-text'>
                     <Link to="/gallery">Галерея</Link>
                 </a>
 
             </div>
-            <button className=' w-10 h-10  rounded-3xl hover:bg-emerald-400 flex items-center justify-center' onClick={themeChange}>
+            <div className='w-auto h-auto flex items-center'>
+            <button className=' w-10 h-10  rounded-3xl hover:bg-emerald-400 flex items-center justify-center relative right-3' onClick={themeChange}>
                 {
                     isTheme ? (
 
@@ -71,7 +72,6 @@ const Header = ({ isTheme, themeChange }) => {
                 }
 
             </button>
-
             <button className='w-10 h-10 bg-button rounded-md flex items-center justify-center menu-bar'>
                 <Link to='/navigation'>
                     <div className='w-8 h-7 flex flex-col items-center justify-around'>
@@ -82,6 +82,10 @@ const Header = ({ isTheme, themeChange }) => {
                 </Link>
 
             </button>
+            </div>
+           
+
+        
 
             {/* <button className='w-11 h-11 bg-button rounded-md flex items-center justify-center '>
                 <div className='w-9 h-8 flex flex-col items-center justify-around'>

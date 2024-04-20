@@ -28,7 +28,7 @@ const Teachers = ({ isTheme }) => {
                                 <h2 className='w-9/12 h-8 bg-button rounded-lg text-xl text-black  font-mono  flex items-center justify-center'>Галина Чікель</h2>
 
 
-                                <div className='w-48  h-auto   rounded-md  flex items-center justify-between '>
+                                <div className='w-28  h-auto   rounded-md  flex items-center justify-between '>
 
 
                                     <div className='w-11 h-11 rounded-lg bg-button shadow-2xl flex items-center justify-center'>
@@ -38,9 +38,7 @@ const Teachers = ({ isTheme }) => {
                                     <div className='w-11 h-11 rounded-lg bg-button shadow-2xl flex items-center justify-center'>
                                         <img className='w-7 h-7 ' src="https://www.svgrepo.com/show/353162/instagram-with-circle.svg" alt="" />
                                     </div>
-                                    <div className='w-11 h-11 rounded-lg bg-button shadow-2xl flex items-center justify-center'>
-                                        <img className='w-7 h-7 ' src="https://www.svgrepo.com/show/332182/twitter-circle.svg" alt="" />
-                                    </div>
+                                 
                                 </div>
                             </div>
                         </div>
@@ -59,19 +57,21 @@ const Teachers = ({ isTheme }) => {
                                 <h2 className='w-9/12 h-8 bg-button rounded-lg text-xl text-black  font-mono  flex items-center justify-center'>Віталій Гимон</h2>
 
 
-                                <div className='w-48  h-auto   rounded-md  flex items-center justify-between '>
+                                <div className='w-28  h-auto   rounded-md  flex items-center justify-between '>
 
 
                                     <div className='w-11 h-11 rounded-lg bg-button shadow-2xl flex items-center justify-center'>
                                         <img className='w-7 h-7 ' src="https://cdn-icons-png.flaticon.com/512/2175/2175193.png" alt="" />
 
                                     </div>
+                                    <a href="https://www.instagram.com/iamvitalik/">
+
+
                                     <div className='w-11 h-11 rounded-lg bg-button shadow-2xl flex items-center justify-center'>
                                         <img className='w-7 h-7 ' src="https://www.svgrepo.com/show/353162/instagram-with-circle.svg" alt="" />
                                     </div>
-                                    <div className='w-11 h-11 rounded-lg bg-button shadow-2xl flex items-center justify-center'>
-                                        <img className='w-7 h-7 ' src="https://www.svgrepo.com/show/332182/twitter-circle.svg" alt="" />
-                                    </div>
+                                    </a>
+                                  
                                 </div>
                             </div>
                         </div>

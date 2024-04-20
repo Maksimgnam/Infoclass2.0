@@ -15,7 +15,7 @@ module.exports = {
 
       },
       minWidth: {
-        "news-card": '40%',
+        "news-card": "37%",
         'home-text': '40%'
       },
       minHeight: {
@@ -31,13 +31,17 @@ module.exports = {
       maxWidth: {
         'home-text': '45%',
         'home-images': '50%',
-        'home-card': '80%',
+        'home-card': '90%',
         'news-card': "40%"
 
       },
       backgroundColor: {
         "navigation": "#333"
+      },
+      textColor:{
+        "green":"#61F5C6"
       }
+      
 
 
 
