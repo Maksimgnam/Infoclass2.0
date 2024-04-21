@@ -12,11 +12,11 @@ const Home = ({ isTheme }) => {
       
             <div className='w-11/12 max-w-home-card h-auto  flex flex-wrap justify-between '>
                 <div className='w-auto min-w-home-text max-w-home-text  min-h-home-text '>
-                    <div className='w-auto flex pt-6'>
+                    <div className='w-auto flex items-center pt-6'>
                         <div className='w-10 h-10  rounded-md '>
                             <img src="https://cdn-icons-png.flaticon.com/512/5390/5390264.png" alt="" />
                         </div>
-                        <h1 className='text-3xl font-medium relative left-3'>Клас інформатики №2 </h1>
+                        <h1 className=' sm:text-3xl text-2xl home-h2 font-medium pl-3'>Клас інформатики №2 </h1>
                     </div>
                     <div className='w-auto h-auto min-h-home-text pt-2 '>
                         <p className='text-lg font-semibold text-gray-400'>Опис</p>

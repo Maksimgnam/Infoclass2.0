@@ -39,7 +39,7 @@ import Logo from '../Logo/Logo';
 
 const Header = ({ isTheme, themeChange }) => {
     return (
-        <div className='w-full h-header bg-white z-50 flex items-center justify-between p-20 pt-0 pb-0 '
+        <div className='w-full h-header bg-white z-50 flex items-center justify-between p-20 pt-0 pb-0 header '
          style={{
             backgroundColor: isTheme ? '#333' : '#fff',
             color: isTheme ? 'white' : '#333',

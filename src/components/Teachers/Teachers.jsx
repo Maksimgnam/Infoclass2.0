@@ -30,11 +30,14 @@ const Teachers = ({ isTheme }) => {
 
                                 <div className='w-28  h-auto   rounded-md  flex items-center justify-between '>
 
+                                <a href="https://m.facebook.com/100003407583929/">
+
 
                                     <div className='w-11 h-11 rounded-lg bg-button shadow-2xl flex items-center justify-center'>
                                         <img className='w-7 h-7 ' src="https://cdn-icons-png.flaticon.com/512/2175/2175193.png" alt="" />
 
                                     </div>
+                                </a>
                                     <div className='w-11 h-11 rounded-lg bg-button shadow-2xl flex items-center justify-center'>
                                         <img className='w-7 h-7 ' src="https://www.svgrepo.com/show/353162/instagram-with-circle.svg" alt="" />
                                     </div>
