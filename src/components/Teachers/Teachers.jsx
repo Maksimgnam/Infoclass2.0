@@ -1,11 +1,16 @@
 import React from 'react';
-import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 import teacher from '../../../public/Images/teacher.jpg';
 import teacher2 from '../../../public/Images/teacher2.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Teachers = ({ isTheme }) => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
 
     return (
         <div style={{
@@ -17,7 +22,7 @@ const Teachers = ({ isTheme }) => {
             <div className='w-full h-auto   rounded-md flex items-center justify-center  '>
                 <div className='w-auto  h-full   rounded-xl pl-2 flex flex-wrap  items-center justify-center '>
 
-                    <div className='w-80 h-full m-8 mt-0 flex flex-col  justify-center items-center rounded-md  pt-4 pb-5 p-3   '>
+                    <div data-aos="fade-right" className='w-80 h-full m-8 mt-0 flex flex-col  justify-center items-center rounded-md  pt-4 pb-5 p-3   '>
 
                         <img className='w-80 h-96 rounded-md size-cover  border-emerald-900 ' src={teacher} alt="" />
 
@@ -49,7 +54,7 @@ const Teachers = ({ isTheme }) => {
 
 
                     </div>
-                    <div className='w-80 h-full m-8 mt-0 flex flex-col  justify-center items-center rounded-md  pt-4 pb-5 p-3   '>
+                    <div data-aos="fade-left" className='w-80 h-full m-8 mt-0 flex flex-col  justify-center items-center rounded-md  pt-4 pb-5 p-3   '>
 
                         <img className='w-full h-96 rounded-md size-cover  border-emerald-900 ' src={teacher2} alt="" />
 

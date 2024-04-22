@@ -1,18 +1,40 @@
 [
     {
+        "id": 0,
+        
         "image": "/Images/class1.jpg"
     },
     {
+        "id": 1,
         "image": "/Images/class2.jpg"
     },
     {
+        "id": 2,
         "image": "/Images/class3.jpg"
     },
     {
+        "id": 3,
         "image": "/Images/class4.jpg"
     },
     {
-        "image":"/galleryImages/two.jpg"
+        "id": 4,
+        "image":"/Images/one.jpg"
+    },
+    {
+        "id": 5,
+        "image":"/Images/two.jpg"
+    },
+    {
+        "id": 6,
+        "image":"/Images/three.jpg"
+    },
+    {
+        "id":7,
+        "image":"/Images/four.jpg"
+    },
+    {
+        "id": 8,
+        "image":"/Images/five.jpg"
     }
   
 ]

@@ -1,17 +1,24 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 import class1 from '../../../public/Images/class1.jpg';
 import class2 from '../../../public/Images/class2.jpg'
 import class3 from '../../../public/Images/class3.jpg'
-import class4 from '../../../public/Images/class4.jpg'
+import class4 from '../../../public/Images/class4.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = ({ isTheme }) => {
+
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
     return (
         <div style={{ backgroundColor: isTheme ? '#333' : '#fff', color: isTheme ? 'white' : '#333', }} className='w-full h-auto   flex items-center justify-center '>
       
-            <div className='w-11/12 max-w-home-card h-auto  flex flex-wrap justify-between '>
-                <div className='w-auto min-w-home-text max-w-home-text  min-h-home-text '>
+            <div className='w-11/12   max-w-home-card h-auto  flex flex-wrap   justify-around '>
+                <div data-aos="fade-right" className='w-auto min-w-home-text max-w-home-text  min-h-home-text '>
                     <div className='w-auto flex items-center pt-6'>
                         <div className='w-10 h-10  rounded-md '>
                             <img src="https://cdn-icons-png.flaticon.com/512/5390/5390264.png" alt="" />
@@ -40,23 +47,8 @@ const Home = ({ isTheme }) => {
 
 
                 </div>
-                <div className='w-auto  min-w-home-images   max-w-home-images flex flex-wrap'>
-                    {/* <div style={{ backgroundImage: `url('${class2}')` }} className='w-60 h-72 bg-slate-100 rounded-xl m-3 bg-cover home-images'>
-
-                    </div>
-                    <div style={{ backgroundImage: `url('${class3}')` }} className='w-72 h-72 bg-slate-100 rounded-xl m-3 bg-cover home-images'>
-
-                    </div>
-
-
-                    <div style={{ backgroundImage: `url('${class1}')` }} className='w-60 h-60 bg-slate-100 rounded-xl m-3 bg-cover home-images'>
-
-                    </div>
-
-
-                    <div style={{ backgroundImage: `url('${class4}')` }} className='w-72 h-60 bg-slate-100 rounded-xl m-3 bg-contain home-images'>
-                        <img className='w-full h-full  rounded-xl' src={class4} alt="" />
-                    </div> */}
+                <div data-aos="fade-right" className='w-auto  min-w-home-images    max-w-home-images flex flex-wrap justify-center'>
+               
 
                     <div className='w-60 h-60 bg-slate-100 rounded-xl m-3 home-images'>
                         <img className='w-full h-full  rounded-xl bg-cover' src={class2} alt="" />

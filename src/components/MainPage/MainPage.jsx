@@ -62,6 +62,7 @@ import Footer from '../Footer/Footer';
 import Teachers from '../Teachers/Teachers';
 import NavigationPage from '../NavigationPage/NavigationPage';
 import Documents from '../Documents/Documents';
+import Image from '../Image/Image';
 
 
 const Main = () => {
@@ -75,7 +76,7 @@ const Main = () => {
 
         <BrowserRouter>
 
-            <div style={{
+            <div className='w-full h-full' style={{
                 backgroundColor: isTheme ? '#333' : '#fff',
                 color: isTheme ? 'white' : '#333',
 
@@ -101,9 +102,10 @@ const Main = () => {
 
                     } excist />
                     <Route path="/news" element={<News isTheme={isTheme} />} />
-                    <Route path="/gallery" element={<Gallery />} />
+                    <Route path="/gallery" element={<Gallery isTheme={isTheme} />} />
                     <Route path="/lessons" element={<Lessons isTheme={isTheme} />} />
                     <Route path="/navigation" element={<NavigationPage isTheme={isTheme} />} />
+                    <Route path="/image/:id" element={<Image  />} />
 
                 </Routes>
 

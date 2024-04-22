@@ -1,13 +1,12 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import news from '../../../newsData/newsData.json'
+import news from '../../../newsData/newsData.json';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const News = ({ isTheme }) => {
-
-    console.log(news)
-    // const [news, setNews] = useState([]);
     const [searchName, setSearchName] = useState('');
     
 
@@ -15,9 +14,13 @@ const News = ({ isTheme }) => {
         item.title.toLowerCase().includes(searchName.toLowerCase())
     
     )
+    
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
 
     return (
-        <div className='w-full h-full  ' style={{
+        <div className='w-full h-auto  ' style={{
             backgroundColor: isTheme ? '#333' : '#fff',
             color: isTheme ? 'white' : '#333',
             padding: '5px',
@@ -60,7 +63,7 @@ const News = ({ isTheme }) => {
                         {filteredNews.length > 0 ? (
                             <div className='w-full  h-auto flex flex-wrap justify-center   pl-5 '>
                                 {filteredNews.map((item, index) => (
-                                    <div key={index} className='w-auto min-w-news-card max-w-news-card min-h-96 h-auto  rounded-xl flex flex-col justify-center items-center m-3 pt-2'>
+                                    <div data-aos="fade-up" key={index} className='w-auto min-w-news-card max-w-news-card min-h-96 h-auto  rounded-xl flex flex-col justify-center items-center m-3 pt-2'>
                                   
                                             <img className='w-11/12 h-96 rounded' src={item.image} alt="" />
                                      

@@ -1,14 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Motos = ({ isTheme }) => {
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
     return (
         <div style={{
             backgroundColor: isTheme ? '#333' : '#fff',
             color: isTheme ? 'white' : '#333',
 
         }} className='w-full h-auto  flex flex-col items-center justify-center p-5'>
-            <h1 className='text-2xl font-mono'>Наші мото</h1>
-            <div className='w-full h-auto flex flex-wrap items-center justify-center'>
+            <h1 data-aos="fade-left" className='text-2xl font-mono'>Наші мото</h1>
+            <div data-aos="fade-left" className='w-full h-auto flex flex-wrap items-center justify-center'>
                 <div className='w-80 h-64 rounded-xl border-green-200 border-2 m-3 p-3 card '>
                     <div className='w-full h-auto flex items-center justify-between  '>
                         <p className='text-2xl font-mono'>Клавіатура,Код</p>

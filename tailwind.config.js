@@ -11,7 +11,8 @@ module.exports = {
         "news": '70vh',
         "loader": '95vh',
         '1px': '3px',
-        'navigation': '100vh'
+        'navigation': '100vh',
+        "image":'75%'
 
       },
       minWidth: {
