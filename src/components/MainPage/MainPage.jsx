@@ -63,6 +63,7 @@ import Teachers from '../Teachers/Teachers';
 import NavigationPage from '../NavigationPage/NavigationPage';
 import Documents from '../Documents/Documents';
 import Image from '../Image/Image';
+import ImageSlider from '../ImageSlider/ImageSlider';
 
 
 const Main = () => {
@@ -106,6 +107,7 @@ const Main = () => {
                     <Route path="/lessons" element={<Lessons isTheme={isTheme} />} />
                     <Route path="/navigation" element={<NavigationPage isTheme={isTheme} />} />
                     <Route path="/image/:id" element={<Image  />} />
+                    <Route path="/allImages" element={<ImageSlider/>} />
 
                 </Routes>
 

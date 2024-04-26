@@ -12,7 +12,8 @@ module.exports = {
         "loader": '95vh',
         '1px': '3px',
         'navigation': '100vh',
-        "image":'75%'
+        "image":'75%',
+        "slider-image":"86%"
 
       },
       minWidth: {

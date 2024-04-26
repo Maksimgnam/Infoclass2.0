@@ -43,6 +43,16 @@ const Gallery = ({isTheme}) => {
                     <h2 className='text-2xl text-center font-mono'>Галерея</h2>
                 </div>
 
+                <div className='w-auto h-10'>
+                <button className='w-24 h-9 bg-black rounded-md '>
+                    <Link to="/allImages">
+                        <p className='text-lg text-white font-mono'>Play</p>
+                    </Link>
+
+                </button>
+
+                </div>
+
 
 
             </div>
