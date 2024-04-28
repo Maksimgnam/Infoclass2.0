@@ -19,10 +19,6 @@ const Footer = () => {
                 <p className=' text-lg font-mono text-white p-1 hover:text-green'>
                     <Link to="/news">Новини</Link>
                 </p>
-
-                <p className=' text-lg font-mono text-white p-1 hover:text-green'>
-                    <Link to="/lessons">Уроки</Link>
-                </p>
             </div>
             <div className='w-auto min-w-72 max-w-80 h-60  m-1'>
                 <h2 className=' text-xl text-center   text-white font-medium'>Адреса</h2>
