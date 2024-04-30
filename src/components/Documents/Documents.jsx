@@ -8,7 +8,7 @@ const Documents = ({ isTheme }) => {
 
         }} className='w-full h-auto bg-green-600 flex flex-col items-center justify-center p-6'>
             <h2 className='text-2xl font-mono'>Нормативні документи</h2>
-            <iframe src="https://mmk.edu.vn.ua/uploads/images/articles/pochatkova/vchutel/urok1.pdf" frameborder="0" height={800} className='mt-5 w-8/12 pdf  '></iframe>
+            <iframe src="/urok1.pdf" frameborder="0" height={800} className='mt-5 w-8/12 pdf  '></iframe>
         </div>
     )
 }

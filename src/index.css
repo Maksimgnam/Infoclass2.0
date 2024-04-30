@@ -24,6 +24,10 @@ body {
   display: none;
 }
 
+.gallery-down-buttons{
+  display: none;
+}
+
 @media (max-width:1350px) {
   .max-w-home-card {
 
@@ -117,6 +121,7 @@ body {
   .menu-bar {
     display: flex;
   }
+ 
 
 }
 
@@ -165,6 +170,12 @@ body {
 
   .footer{
     justify-content: center;
+  }
+  .gallery-buttons{
+    display: none;
+  }
+  .gallery-down-buttons{
+    display: flex;
   }
 
 

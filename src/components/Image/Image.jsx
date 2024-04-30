@@ -15,7 +15,8 @@ const Image = ({isTheme}) => {
           </button>
         </Link>
       </div>
-      <img src={item.image} className='w-full sm:w-10/12 sm:h-full h-image rounded-xl' alt="" />
+
+      <img src={item.image} className='w-full sm:w-6/12 sm:h-full h-image rounded-xl' alt="" />
 
     </div>
   )

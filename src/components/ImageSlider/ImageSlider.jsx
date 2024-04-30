@@ -39,7 +39,7 @@ const ImageSlider = () => {
           </button>
         </Link>
       </div>
-      <img className='w-full sm:w-10/12 sm:h-slider-image h-image rounded-lg' src={galleryData[currentIndex].image}  />
+      <img className='w-full sm:w-5/12 sm:h-slider-image h-image rounded-lg' src={galleryData[currentIndex].image}  />
         <div className="w-full sm:w-5/12 h-7  rounded-lg m-2.5 flex items-center justify-center">
         <div
           className="h-full w-  sm:w-5/12 bg-green-300 rounded-xl"
