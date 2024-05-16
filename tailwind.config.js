@@ -42,6 +42,9 @@ module.exports = {
       },
       textColor:{
         "green":"#61F5C6"
+      },
+      boxShadow:{
+        input: "0 0 3px #ccc"
       }
       
 

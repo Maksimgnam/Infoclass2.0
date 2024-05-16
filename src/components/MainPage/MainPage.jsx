@@ -53,7 +53,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Gallery from '../Gallery/Gallery';
 import News from '../News/News';
-import Lessons from '../Lessons/Lessons';
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Motos from '../Motos/Motos';
@@ -104,7 +103,6 @@ const Main = () => {
                     } excist />
                     <Route path="/news" element={<News isTheme={isTheme} />} />
                     <Route path="/gallery" element={<Gallery isTheme={isTheme} />} />
-                    <Route path="/lessons" element={<Lessons isTheme={isTheme} />} />
                     <Route path="/navigation" element={<NavigationPage isTheme={isTheme} />} />
                     <Route path="/image/:id" element={<Image  />} />
                     <Route path="/allImages" element={<ImageSlider/>} />

@@ -25,7 +25,7 @@ const News = ({ isTheme }) => {
             color: isTheme ? 'white' : '#333',
             padding: '5px',
         }}>
-            <div className='w-full h-14 flex justify-between items-center  '>
+            <div className='w-full h-14 flex justify-between items-center p-7 '>
                 <Link to="/">
                     <button className='w-9 h-9 bg-black rounded-md text-2xl text-white font-mono'>
 
@@ -34,10 +34,11 @@ const News = ({ isTheme }) => {
 
                     </button>
                 </Link>
-                <div className='w-11/12 h-full flex items-center justify-center '>
-                    <div className='w-auto h-full flex items-center justify-around  '>
-                        <h2 className='text-2xl font-medium title '>Новини</h2>
-                        <div className='w-96 h-full rounded-2xl flex items-center justify-end'>
+                <h2 className='text-2xl font-medium  title  pl-16 '>Новини</h2>
+                
+  
+  
+                        {/* <div className='w-72 h-full rounded-2xl flex items-center justify-end'>
                             <input
                                 value={searchName}
                                 onChange={(e) => setSearchName(e.target.value)}
@@ -48,11 +49,26 @@ const News = ({ isTheme }) => {
                             <div className='w-11 h-11 bg-button rounded-md flex items-center justify-center relative right-8'>
                                 <img className='w-5 h-5' src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt="" />
                             </div>
-                        </div>
+                        </div> */}
+                        <div className='flex'>
 
-                    </div>
+                      
+                      
+                          <input
+                                value={searchName}
+                                onChange={(e) => setSearchName(e.target.value)}
+                                type="text"
+                                placeholder='Пошук новин...'
+                                className='w-52 h-9 text-lg placeholder:text-lg  bg-transparent rounded-s  shadow-input  outline-none pl-2'
+                            />
+                            <div className='w-9 h-9 bg-button rounded-e flex items-center justify-center '>
+                            <img className='w-5 h-5' src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt="" />
+                            </div>
+                              </div>
 
-                </div>
+          
+
+            
 
             </div>
             {
