@@ -18,6 +18,12 @@ const ImageSlider = () => {
     setCurrentIndex((prevIndex) => (prevIndex === galleryData.length - 1 ? 1 : prevIndex + 1));
     setSlideProgress(0)
   };
+  const previousSlide = ()=> {
+    setCurrentIndex(function(prevIndex) {
+      return prevIndex === 0 ? galleryData.length - 1 : prevIndex - 1;
+  });
+  setSlideProgress(0);
+};
 
   useEffect(() => {
     const intervalId = setInterval(nextSlide, 12000);
@@ -49,7 +55,7 @@ const ImageSlider = () => {
       <div className='w-full  sm:w-10/12 h-auto  flex items-center justify-center relative top-2  '>
 
 
-        <button onClick={nextSlide} className='w-11 h-9 bg-black rounded'>
+        <button onClick={previousSlide} className='w-11 h-9 bg-black rounded'>
             <p className='text-lg text-white font-mono '>  {`<`} </p>
         </button>
         <div className='w-14 h-9 flex items-center justify-center'>
