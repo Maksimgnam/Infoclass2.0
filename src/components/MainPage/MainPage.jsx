@@ -1,53 +1,4 @@
-// import React from 'react'
-// import Header from '../Header/Header';
-// import { useState } from 'react';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import News from '../News/News';
-// import Lessons from '../Lessons/Lessons';
-// import Gallery from '../Gallery/Gallery';
 
-// const MainPage = () => {
-
-//     const [isTheme, setIsTheme] = useState(false);
-//     const themeChange = () => {
-//         setIsTheme((prevTheme) => !prevTheme)
-//     }
-//     return (
-//         <div>
-
-
-//             <BrowserRouter>
-
-//                 <div className='w-full h-full'>
-//                     <Header />
-//                     <Routes>
-//                         <Route path="/" element={
-//                             <div className='w-full h-pages bg-green-200'></div>
-//                         } excist />
-
-
-
-//                     </Routes>
-
-//                 </div>
-//                 <div>
-
-
-//                     <Routes>
-
-//                         <Route path="/news" element={<News isTheme={isTheme} />} />
-//                         <Route path="/gallery" element={<Gallery />} />
-//                         <Route path="/lessons" element={<Lessons isTheme={isTheme} />} />
-
-//                     </Routes>
-//                 </div>
-//             </BrowserRouter>
-//         </div>
-//     )
-// }
-
-
-// export default MainPage
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -63,6 +14,7 @@ import NavigationPage from '../NavigationPage/NavigationPage';
 import Documents from '../Documents/Documents';
 import Image from '../Image/Image';
 import ImageSlider from '../ImageSlider/ImageSlider';
+import Materials from '../Materials';
 
 
 const Main = () => {
@@ -106,6 +58,7 @@ const Main = () => {
                     <Route path="/navigation" element={<NavigationPage isTheme={isTheme} />} />
                     <Route path="/image/:id" element={<Image  />} />
                     <Route path="/allImages" element={<ImageSlider/>} />
+                    <Route path="/materials" element={<Materials/>} />
 
                 </Routes>
 

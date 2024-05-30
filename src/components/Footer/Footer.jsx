@@ -13,12 +13,18 @@ const Footer = () => {
             <p className=' text-lg font-mono text-white p-1 hover:text-green '>
                     <Link to="/">Головна</Link>
                 </p>
+
+              
+                <p className=' text-lg font-mono text-white p-1 '>
+                    <Link to="/news">Новини</Link>
+                </p>
+               
                 <p className=' text-lg font-mono text-white p-1 hover:text-green'>
                     <Link to="/gallery">Галерея</Link>
                 </p>
-                <p className=' text-lg font-mono text-white p-1 hover:text-green'>
-                    <Link to="/news">Новини</Link>
-                </p>
+                <a className=' text-lg  font-mono text-white   hover:text-green '>
+                    <Link to="/materials">Матеріали</Link>
+                </a>
             </div>
             <div className='w-auto min-w-72 max-w-80 h-60  m-1'>
                 <h2 className=' text-xl text-center   text-white font-medium'>Адреса</h2>

@@ -1,35 +1,4 @@
 
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import Logo from '../Logo/Logo';
-
-// const Header = () => {
-//     return (
-//         <div className='w-full h-header bg-yellow-900'>
-//             <Logo />
-//             {/* <div className='w-3/12 h-10 flex items-center justify-between'>
-//                 <a className=' text-lg  font-mono  hover:text-emerald-500'>
-//                     <Link to="/">Головна</Link>
-//                 </a>
-//                 <a className=' text-lg font-mono  hover:text-emerald-500'>
-//                     <Link to="/news">Новини</Link>
-//                 </a>
-//                 <a className=' text-lg  font-mono hover:text-emerald-500'>
-//                     <Link to="/lessons">Уроки</Link>         </a>
-//                 <a className=' text-lg  font-mono  hover:text-emerald-500'>
-//                     <Link to="/gallery">Галерея</Link>
-//                 </a>
-
-//             </div> */}
-//             <button className=' w-10 h-10  rounded-3xl hover:bg-emerald-400 flex items-center justify-center'>
-
-
-//             </button>
-//         </div>
-//     )
-// }
-
-// export default Header
 
 
 import React from 'react';
@@ -47,15 +16,18 @@ const Header = ({ isTheme, themeChange }) => {
             boxShadow: isTheme ? '' : '0 0 4px #ccc'
         }}>
             <Logo />
-            <div className='w-3/12 h-10 flex items-center justify-between'>
-                <a className=' text-xl  font-mono  hover:text-emerald-500 link-text'>
+            <div className='w-4/12 h-10 flex items-center justify-between'>
+                <a className=' text-lg  hover:text-emerald-500 link-text'>
                     <Link to="/">Головна</Link>
                 </a>
-                <a className=' text-xl font-mono  hover:text-emerald-500 link-text'>
+                <a className=' text-lg  hover:text-emerald-500 link-text'>
                     <Link to="/news">Новини</Link>
                 </a>
+                <a className=' text-lg   hover:text-emerald-500 link-text'>
+                    <Link to="/materials">Матеріали</Link>
+                </a>
               
-                <a className=' text-xl  font-mono  hover:text-emerald-500 link-text'>
+                <a className=' text-lg   hover:text-emerald-500 link-text'>
                     <Link to="/gallery">Галерея</Link>
                 </a>
 
