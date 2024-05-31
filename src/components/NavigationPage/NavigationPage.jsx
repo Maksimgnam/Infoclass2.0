@@ -21,6 +21,10 @@ const NavigationPage = () => {
                     <Link to="/news">
                         <p className='text-4xl text-white font-mono'>Новини</p>
                     </Link>
+                   
+                     <Link  to="/materials">
+                        <p className='text-4xl text-white font-mono'>Матеріали</p>
+                    </Link>
                     <Link to="/gallery">
                         <p className='text-4xl text-white font-mono'>Галерея</p>
                     </Link>
